@@ -21,7 +21,7 @@ export default async function ProfilePage() {
     .eq('user_id', user.id)
     .eq('active', true);
 
-  const forwardingEmail = `${profile?.forward_alias}@${process.env.NEXT_PUBLIC_FORWARD_DOMAIN || 'subalert.app'}`;
+  const forwardingEmail = `${profile?.forward_alias}@${process.env.NEXT_PUBLIC_FORWARD_DOMAIN || 'subalert.org'}`;
 
   return (
     <main className="min-h-screen bg-surface-container-low pb-20">

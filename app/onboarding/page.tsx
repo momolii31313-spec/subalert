@@ -15,7 +15,7 @@ export default async function OnboardingPage() {
 
   if (profile?.onboarded) redirect('/dashboard');
 
-  const domain = process.env.NEXT_PUBLIC_FORWARD_DOMAIN || 'subalert.app';
+  const domain = process.env.NEXT_PUBLIC_FORWARD_DOMAIN || 'subalert.org';
   const forwardingEmail = `${profile?.forward_alias}@${domain}`;
   const firstName = profile?.full_name?.split(' ')[0] || 'there';
 
