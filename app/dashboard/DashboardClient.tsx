@@ -154,7 +154,7 @@ function PendingSubCard({ sub, onAction }: { sub: Sub; onAction: (id: string, ac
           disabled={loading}
           className="flex-1 h-10 rounded-xl border border-outline-variant text-on-surface font-semibold text-sm disabled:opacity-50"
         >
-          Not mine
+          Delete
         </button>
         <button
           onClick={() => handle('confirm')}
@@ -175,19 +175,27 @@ function SubCard({ sub }: { sub: Sub }) {
   const color = colorForName(sub.service_name);
 
   return (
-    <Link href={`/subscription/${sub.id}`} className="w-full bg-white rounded-2xl p-4 border border-outline-variant flex items-center gap-3 text-left hover:shadow-sm transition-shadow">
-      <div className="w-11 h-11 rounded-xl text-white flex items-center justify-center font-bold text-lg shrink-0" style={{ background: color }}>
-        {initial}
-      </div>
-      <div className="flex-1 min-w-0">
-        <p className="font-semibold text-on-surface truncate">{sub.service_name}</p>
-        <p className="text-sm text-on-surface-variant">Next: {dateLabel}</p>
-      </div>
-      <div className="text-right shrink-0">
-        <p className="font-semibold text-on-surface">${sub.price.toFixed(2)}</p>
-        <p className="text-xs text-on-surface-variant">/{sub.billing_cycle === 'yearly' ? 'yr' : sub.billing_cycle === 'weekly' ? 'wk' : 'mo'}</p>
-      </div>
-    </Link>
+    <div className="w-full bg-white rounded-2xl p-4 border border-outline-variant flex items-center gap-3 hover:shadow-sm transition-shadow">
+      <Link href={`/subscription/${sub.id}`} className="flex items-center gap-3 flex-1 min-w-0">
+        <div className="w-11 h-11 rounded-xl text-white flex items-center justify-center font-bold text-lg shrink-0" style={{ background: color }}>
+          {initial}
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="font-semibold text-on-surface truncate">{sub.service_name}</p>
+          <p className="text-sm text-on-surface-variant">Next: {dateLabel}</p>
+        </div>
+        <div className="text-right shrink-0">
+          <p className="font-semibold text-on-surface">${sub.price.toFixed(2)}</p>
+          <p className="text-xs text-on-surface-variant">/{sub.billing_cycle === 'yearly' ? 'yr' : sub.billing_cycle === 'weekly' ? 'wk' : 'mo'}</p>
+        </div>
+      </Link>
+      <Link href={`/subscription/${sub.id}`} aria-label="Edit" className="w-9 h-9 rounded-lg flex items-center justify-center hover:bg-surface-container-low shrink-0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6d3bd7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+        </svg>
+      </Link>
+    </div>
   );
 }
 
