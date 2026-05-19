@@ -83,7 +83,7 @@ export default function ProfileClient({ fullName, email, forwardingEmail, subCou
         <h3 className="font-semibold text-on-surface mb-3">About</h3>
         <div className="space-y-3">
           <Row label="Version" value="0.1.0" />
-          <Row label="Support" value="support@subalert.app" />
+          <Row label="Support" value="support@subalert.org" />
         </div>
       </div>
 
