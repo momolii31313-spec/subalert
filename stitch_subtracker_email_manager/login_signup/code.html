@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-variant": "#f3ded8", "surface-container": "#fee9e3", "inverse-primary": "#d0bcff", "surface-dim": "#ead6d0", "tertiary-container": "#37a783", "on-error-container": "#93000a", "on-background": "#241916", "on-primary-fixed": "#23005c", "on-secondary-container": "#006775", "on-surface-variant": "#57423b", surface: "#fff8f6", "outline-variant": "#dec0b7", primary: "#6d3bd7", "secondary-fixed-dim": "#5ad7ed", "surface-bright": "#fff8f6", "on-tertiary": "#ffffff", "primary-container": "#a37eff", "inverse-on-surface": "#ffede8", "tertiary-fixed": "#8cf7ce", "surface-container-lowest": "#ffffff", "surface-container-low": "#fff1ed", "secondary-fixed": "#a0efff", "on-tertiary-container": "#003526", tertiary: "#006c51", "inverse-surface": "#3a2e2a", error: "#ba1a1a", "error-container": "#ffdad6", "primary-fixed": "#e9ddff", "on-secondary-fixed": "#001f25", "on-tertiary-fixed-variant": "#00513c", "on-secondary": "#ffffff", "primary-fixed-dim": "#d0bcff", "surface-container-highest": "#f3ded8", "on-tertiary-fixed": "#002116", "on-primary": "#ffffff", "on-error": "#ffffff", "surface-tint": "#6d3bd7", secondary: "#006876", background: "#fff8f6", "tertiary-fixed-dim": "#6fdab3", "secondary-container": "#6ee8fe", "on-surface": "#241916", "on-secondary-fixed-variant": "#004e59", "on-primary-container": "#380089", outline: "#8a726a", "on-primary-fixed-variant": "#5516be", "surface-container-high": "#f9e4de"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {base: "8px", sm: "12px", xs: "4px", xl: "80px", md: "24px", lg: "48px", gutter: "24px", "margin-mobile": "16px", "margin-desktop": "64px"}, fontFamily: {"headline-lg-mobile": ["Inter"], "display-lg": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], headline: ["Inter"], display: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"headline-lg-mobile": ["28px", {lineHeight: "36px", fontWeight: "700"}], "display-lg": ["48px", {lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600"}], "label-sm": ["12px", {lineHeight: "16px", fontWeight: "500"}], "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}], "headline-md": ["24px", {lineHeight: "32px", fontWeight: "600"}], "headline-lg": ["32px", {lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700"}], "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}]}}}};</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f6; /* Surface color as per design system fallback */
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom prompt styles for the login layout */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(36, 25, 22, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex items-center justify-center p-margin-mobile md:p-margin-desktop overflow-x-hidden">
+<!-- The Shell is suppressed for Transactional screen (Login/Signup) per Semantic Shell Mandate -->
+<main class="w-full max-w-[1280px] grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Side: Editorial Content / Branding -->
+<section class="hidden lg:flex lg:col-span-6 flex-col justify-center space-y-md">
+<div class="flex items-center space-x-xs text-primary mb-sm">
+<span class="material-symbols-outlined text-[40px]" data-icon="grain">grain</span>
+<h1 class="font-headline-lg text-headline-lg tracking-tight">Aura</h1>
+</div>
+<h2 class="font-display-lg text-display-lg text-on-background max-w-md leading-tight">
+                Master your digital footprint with clarity.
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-sm">
+                Aura brings organized serenity to your recurring commitments, helping you track, manage, and optimize every subscription effortlessly.
+            </p>
+<!-- Abstract Graphic Placeholder -->
+<div class="relative w-full aspect-square max-w-md mt-lg overflow-hidden rounded-xl shadow-md">
+<img alt="Abstract digital calm" class="w-full h-full object-cover" data-alt="A minimalist digital art installation featuring floating, translucent geometric shapes in soft lavender, cream, and warm amber tones. The lighting is ethereal and diffuse, creating a sense of organized serenity and high-end financial wellness. The composition is clean and modern, mirroring a sophisticated subscription management aesthetic with deep blacks and warm whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5nyP7nchMPfUAEqVLWMqWUWQmPGcsnJfhSuvx_3bqvv9yP5kSeuRBw8ogDI2J3tck9EurD8gCPEPpnvOePDubxbkcrY5q86ywXt8Y1EVeAUtWMIU6G1G7r_NYFO9xcHXCvxPs266buoFlZrFn_JPFCL9UOoRmca1t0gpl_rIRo2ocDbYwczu6UeJr2_KPiAPYcXhOMPNKK7Wpv0fNZT4_HLzkFTyHu6ehI0oYFj7YwG4wGaAzP8ufV2cdpyX18I6NYGzu7EmhDis"/>
+</div>
+</section>
+<!-- Right Side: Login/Signup Card -->
+<section class="col-span-1 lg:col-span-6 flex justify-center lg:justify-end">
+<div class="w-full max-w-[440px] glass-card rounded-xl p-md md:p-lg shadow-sm">
+<!-- Mobile Branding -->
+<div class="lg:hidden flex items-center justify-center space-x-xs text-primary mb-md">
+<span class="material-symbols-outlined text-[32px]" data-icon="grain">grain</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile tracking-tight">Aura</span>
+</div>
+<div class="flex flex-col space-y-md">
+<div class="text-center space-y-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Welcome back</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Enter your details to manage your aura.</p>
+</div>
+<!-- Toggle Login/Signup -->
+<div class="flex p-1 bg-surface-container-low rounded-lg">
+<button class="flex-1 py-2 font-label-md text-label-md rounded-md bg-surface-container-highest text-on-surface shadow-sm transition-all duration-200">
+                            Log in
+                        </button>
+<button class="flex-1 py-2 font-label-md text-label-md rounded-md text-on-surface-variant hover:text-on-surface transition-all duration-200">
+                            Sign up
+                        </button>
+</div>
+<!-- Social Login -->
+<button class="flex items-center justify-center w-full px-4 py-3 space-x-sm border-[1.5px] border-outline-variant rounded-md hover:bg-surface-container-low transition-colors active:scale-95 duration-200">
+<img alt="Google" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrjPhTVF3Aj908cjRKXe-xtlj6xwTppRNpU1eupjItujQ6B2rWgq_dxcgx2PHiMMm5ZYJArlTNndx2ICbncQrnkkldVErk7Bay9QkDmG5S0tziUpkYECSorVpZbClhGFBJ9uYgYd4tAVCff3hDdV3PbqLurTQrMOsgQenH2lbPm7P29nhD8ad5-A3zF2PIiuKw3x82jOFJTK3IC45zGoKpCNXMQIQ8tmEpqd4eFVfeo68vnb0yCP6gGwysNrOMFrMVaONw-0MD8F0"/>
+<span class="font-label-md text-label-md text-on-surface">Continue with Google</span>
+</button>
+<div class="relative flex items-center py-2">
+<div class="flex-grow border-t border-outline-variant/30"></div>
+<span class="flex-shrink mx-4 font-label-sm text-label-sm text-on-surface-variant/60">OR</span>
+<div class="flex-grow border-t border-outline-variant/30"></div>
+</div>
+<!-- Form -->
+<form class="space-y-sm" onsubmit="return false;">
+<div class="space-y-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant px-1" for="email">Email address</label>
+<input class="w-full px-4 py-3 bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-md font-body-md text-body-md text-on-surface transition-all" id="email" placeholder="name@example.com" type="email"/>
+</div>
+<div class="space-y-xs">
+<div class="flex justify-between items-center px-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="password">Password</label>
+<a class="font-label-sm text-label-sm text-primary hover:underline" href="#">Forgot?</a>
+</div>
+<input class="w-full px-4 py-3 bg-surface-container-low border-transparent focus:border-primary focus:ring-0 rounded-md font-body-md text-body-md text-on-surface transition-all" id="password" placeholder="••••••••" type="password"/>
+</div>
+<button class="w-full py-3 mt-md bg-primary text-on-primary font-label-md text-label-md rounded-md shadow-md active:scale-[0.98] transition-all duration-200" type="submit">
+                            Continue
+                        </button>
+</form>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant/80 pt-sm">
+                        By continuing, you agree to Aura's <a class="text-on-surface underline" href="#">Terms of Service</a> and <a class="text-on-surface underline" href="#">Privacy Policy</a>.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Attribution (Minimal) -->
+<footer class="fixed bottom-margin-mobile left-0 w-full text-center pointer-events-none">
+<p class="font-label-sm text-label-sm text-on-surface-variant/40">© 2024 Aura Financial Systems</p>
+</footer>
+</body></html>

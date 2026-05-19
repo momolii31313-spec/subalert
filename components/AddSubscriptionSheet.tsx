@@ -127,6 +127,13 @@ export default function AddSubscriptionSheet({ open, onClose, existing }: Props)
 
     if (result.error) { setError(result.error.message); setSaving(false); return; }
 
+// Play cha-ching sound on successful add
+    if (!isEdit) {
+      const audio = new Audio('/sounds/cha-ching.mp3');
+      audio.play().catch(() => {});
+    }
+
+
     setSaving(false);
     onClose();
     router.refresh();

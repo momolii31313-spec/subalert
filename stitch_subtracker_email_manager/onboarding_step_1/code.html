@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aura - Onboarding Step 1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-variant": "#f3ded8", "surface-container": "#fee9e3", "inverse-primary": "#d0bcff", "surface-dim": "#ead6d0", "tertiary-container": "#37a783", "on-error-container": "#93000a", "on-background": "#241916", "on-primary-fixed": "#23005c", "on-secondary-container": "#006775", "on-surface-variant": "#57423b", surface: "#fff8f6", "outline-variant": "#dec0b7", primary: "#6d3bd7", "secondary-fixed-dim": "#5ad7ed", "surface-bright": "#fff8f6", "on-tertiary": "#ffffff", "primary-container": "#a37eff", "inverse-on-surface": "#ffede8", "tertiary-fixed": "#8cf7ce", "surface-container-lowest": "#ffffff", "surface-container-low": "#fff1ed", "secondary-fixed": "#a0efff", "on-tertiary-container": "#003526", tertiary: "#006c51", "inverse-surface": "#3a2e2a", error: "#ba1a1a", "error-container": "#ffdad6", "primary-fixed": "#e9ddff", "on-secondary-fixed": "#001f25", "on-tertiary-fixed-variant": "#00513c", "on-secondary": "#ffffff", "primary-fixed-dim": "#d0bcff", "surface-container-highest": "#f3ded8", "on-tertiary-fixed": "#002116", "on-primary": "#ffffff", "on-error": "#ffffff", "surface-tint": "#6d3bd7", secondary: "#006876", background: "#fff8f6", "tertiary-fixed-dim": "#6fdab3", "secondary-container": "#6ee8fe", "on-surface": "#241916", "on-secondary-fixed-variant": "#004e59", "on-primary-container": "#380089", outline: "#8a726a", "on-primary-fixed-variant": "#5516be", "surface-container-high": "#f9e4de"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {base: "8px", sm: "12px", xs: "4px", xl: "80px", md: "24px", lg: "48px", gutter: "24px", "margin-mobile": "16px", "margin-desktop": "64px"}, fontFamily: {"headline-lg-mobile": ["Inter"], "display-lg": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], headline: ["Inter"], display: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"headline-lg-mobile": ["28px", {lineHeight: "36px", fontWeight: "700"}], "display-lg": ["48px", {lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600"}], "label-sm": ["12px", {lineHeight: "16px", fontWeight: "500"}], "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}], "headline-md": ["24px", {lineHeight: "32px", fontWeight: "600"}], "headline-lg": ["32px", {lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700"}], "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}]}}}};</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff8f6;
+            color: #241916;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col min-h-screen">
+<!-- Top Navigation Bar (Onboarding Version: Simple Logo) -->
+<header class="bg-surface fixed top-0 w-full z-50 shadow-sm flex justify-center items-center h-16">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">grain</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Aura</span>
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center px-margin-mobile md:px-margin-desktop py-xl mt-16">
+<div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<!-- Illustration Section -->
+<div class="md:col-span-6 order-2 md:order-1 flex justify-center items-center">
+<div class="relative w-full max-w-sm aspect-square flex items-center justify-center">
+<!-- Background Soft Aura -->
+<div class="absolute inset-0 bg-primary-container/20 rounded-full blur-3xl"></div>
+<!-- Main Illustration Component -->
+<div class="relative bg-surface-container-lowest rounded-[40px] shadow-md p-lg w-full flex flex-col items-center justify-center overflow-hidden border border-on-background/5">
+<img alt="Automation Illustration" class="w-48 h-48 object-contain mb-base" data-alt="A clean minimalist 3D digital illustration of a sleek violet email envelope floating gracefully toward a semi-transparent glowing folder icon. The background is a soft cream with warm purple atmospheric lighting, creating a calm and organized fintech aesthetic. The style is editorial and high-end with smooth gradients and soft ambient shadows, emphasizing effortless automation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUN-72vaRrDdPRpOxni5VV0t1K6qTgh2fvIw0HJwx3Wc9TrB1iqjGL1KRhbHkFj45ICSn3Fpw7wdp3AmnkcrRUmY2laDkNbAGwtsrWS9r5K5yZ8Clt4fspkmsiQf743v5nT2-Jkwu8NbloeowVVcX9HW-EaBmm7eK2FAHjxobki7liXn5tIsEO-1fdjjG3JsC0JvdDAWLhBIVpMD7wcTcgvWE7ybcjsHx3IfYZ4u85Znisr3us0KCQ2kKVgXpWWwxW9H8_1Yhzevs"/>
+<!-- Floating Detail Elements (Chips) -->
+<div class="absolute top-12 left-8 bg-surface-container-high px-4 py-2 rounded-xl shadow-sm flex items-center gap-2 border border-on-background/5">
+<span class="material-symbols-outlined text-primary text-[18px]">receipt</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Netflix Receipt</span>
+</div>
+<div class="absolute bottom-16 right-8 bg-tertiary-container/10 px-4 py-2 rounded-xl shadow-sm flex items-center gap-2 border border-tertiary/20">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm text-tertiary">Categorized</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Content Section -->
+<div class="md:col-span-6 order-1 md:order-2 flex flex-col gap-md">
+<!-- Step Indicator -->
+<div class="flex gap-2 items-center mb-xs">
+<div class="h-1.5 w-12 rounded-full bg-primary"></div>
+<div class="h-1.5 w-4 rounded-full bg-surface-variant"></div>
+<div class="h-1.5 w-4 rounded-full bg-surface-variant"></div>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface-variant">Step 1 of 3</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background leading-tight">
+                    Control your costs automatically
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                    Just forward your digital receipts or set up a filter, and we'll handle the rest. No more manual spreadsheets or missed trials.
+                </p>
+<!-- Features Preview -->
+<ul class="flex flex-col gap-sm mt-xs">
+<li class="flex items-center gap-3">
+<div class="bg-primary/10 p-1.5 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Auto-detection of hidden fees</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="bg-primary/10 p-1.5 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Simple email forwarding</span>
+</li>
+</ul>
+<!-- Action Button -->
+<div class="flex items-center gap-md mt-md">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-10 py-4 rounded-xl shadow-md hover:opacity-90 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2">
+                        Next
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors">
+                        Skip onboarding
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Visual Polish: Subtle Background Gradients -->
+<div class="fixed top-0 right-0 -z-10 w-[40vw] h-[40vw] bg-primary/5 rounded-full blur-[100px] opacity-60 translate-x-1/2 -translate-y-1/2"></div>
+<div class="fixed bottom-0 left-0 -z-10 w-[30vw] h-[30vw] bg-tertiary/5 rounded-full blur-[80px] opacity-40 -translate-x-1/2 translate-y-1/2"></div>
+</body></html>

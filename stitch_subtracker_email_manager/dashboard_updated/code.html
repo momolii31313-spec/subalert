@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SubTracker Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"tertiary-fixed": "#8cf7ce", "on-error-container": "#93000a", "outline-variant": "#dec0b7", "on-secondary-fixed": "#001f25", "on-primary-fixed-variant": "#5516be", "on-surface": "#241916", "surface-container": "#fee9e3", surface: "#fff8f6", "error-container": "#ffdad6", "tertiary-container": "#37a783", "surface-container-high": "#f9e4de", "primary-fixed": "#e9ddff", "inverse-primary": "#d0bcff", "surface-dim": "#ead6d0", "surface-tint": "#6d3bd7", "secondary-container": "#6ee8fe", "on-tertiary": "#ffffff", tertiary: "#006c51", "on-tertiary-container": "#003526", "inverse-surface": "#3a2e2a", "surface-container-low": "#fff1ed", outline: "#8a726a", "secondary-fixed-dim": "#5ad7ed", "on-primary": "#ffffff", "on-tertiary-fixed": "#002116", "surface-bright": "#fff8f6", "on-tertiary-fixed-variant": "#00513c", "primary-container": "#a37eff", "secondary-fixed": "#a0efff", "surface-variant": "#f3ded8", "inverse-on-surface": "#ffede8", "on-primary-container": "#380089", "on-error": "#ffffff", primary: "#6d3bd7", "on-secondary-fixed-variant": "#004e59", "on-primary-fixed": "#23005c", "on-secondary": "#ffffff", "on-surface-variant": "#57423b", secondary: "#006876", "tertiary-fixed-dim": "#6fdab3", error: "#ba1a1a", "on-secondary-container": "#006775", "on-background": "#241916", "surface-container-highest": "#f3ded8", "primary-fixed-dim": "#d0bcff", "surface-container-lowest": "#ffffff", background: "#fff8f6"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"stack-md": "16px", "stack-lg": "32px", "container-margin": "24px", "stack-sm": "8px", gutter: "16px", unit: "8px"}, fontFamily: {"headline-lg-mobile": ["Inter", "sans-serif"], "label-md": ["Inter", "sans-serif"], "headline-lg": ["Inter", "sans-serif"], display: ["Inter"], "body-md": ["Inter", "sans-serif"], "label-sm": ["Inter", "sans-serif"], "headline-md": ["Inter", "sans-serif"], "body-lg": ["Inter", "sans-serif"], headline: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"headline-lg-mobile": ["28px", {lineHeight: "36px", fontWeight: "700"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600"}], "headline-lg": ["32px", {lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700"}], display: ["40px", {lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700"}], "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}], "label-sm": ["12px", {lineHeight: "16px", fontWeight: "500"}], "headline-md": ["24px", {lineHeight: "32px", fontWeight: "600"}], "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}]}}}};</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FBF7F2;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-transparent flex items-center justify-between px-container-margin py-stack-md w-full sticky top-0 z-40">
+<div class="flex flex-col">
+<h1 class="text-[20px] font-bold text-on-surface">Morning, Budi</h1>
+<p class="text-body-md text-on-surface-variant">Thursday, 10 March, 2025</p>
+</div>
+<div class="flex items-center gap-stack-sm">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-surface-container-high">
+<img alt="User Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7lGl7yhmnKely1Zrh3sGO0V2pQc3UT-7iQ21wr-fqN_w250ONY-nitEBOhFuBHzrf0wGQGubY-80zppoCiAkW2ebnMlKqgV3ldRbkVT24McpXucg-B5lixpw-NRrFTLXiyhL23uclkoBNASisFNqG50bnW5_-vFGRxm3xhx-0NzFHLoavxqlX2K_dG3wjM_dQtZbXd6XIwdejXK8DoxBqWw0RCFbU8oVgVStVxJW4hCnDciVr7Es2JX551ZvCZ0JapQEZ9V2JUwM"/>
+</div>
+</div>
+</header>
+<main class="px-container-margin space-y-stack-lg">
+<!-- Calendar Picker Section -->
+<section class="mt-4">
+<div class="flex justify-between items-center overflow-x-auto hide-scrollbar gap-2 py-2">
+<div class="flex flex-col items-center min-w-[48px]">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-2">Mon</span>
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-lowest text-on-surface text-body-md font-bold">7</button>
+</div>
+<div class="flex flex-col items-center min-w-[48px]">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-2">Tue</span>
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-lowest text-on-surface text-body-md font-bold">8</button>
+</div>
+<div class="flex flex-col items-center min-w-[48px]">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-2">Wed</span>
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-lowest text-on-surface text-body-md font-bold">9</button>
+</div>
+<div class="flex flex-col items-center min-w-[48px]">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-2">Thu</span>
+<button class="w-12 h-12 flex items-center justify-center rounded-full text-surface-bright shadow-lg text-body-md font-bold bg-primary-container">10</button>
+</div>
+<div class="flex flex-col items-center min-w-[48px]">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-2">Fri</span>
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-lowest text-on-surface text-body-md font-bold">11</button>
+</div>
+<div class="flex flex-col items-center min-w-[48px]">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-2">Sat</span>
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-lowest text-on-surface text-body-md font-bold">12</button>
+</div>
+<div class="flex flex-col items-center min-w-[48px]">
+<span class="text-label-sm font-label-sm text-on-surface-variant mb-2">Sun</span>
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-lowest text-on-surface text-body-md font-bold">13</button>
+</div>
+</div>
+</section>
+<!-- Hero Reminder Card -->
+<section>
+<div class="relative overflow-hidden bg-primary-fixed rounded-[24px] p-6 flex flex-col items-start min-h-[160px] shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
+<div class="z-10 max-w-[65%]">
+<h2 class="text-headline-md font-bold text-on-primary-fixed mb-1">Set the reminder</h2>
+<p class="text-body-md text-on-primary-fixed-variant mb-4 leading-tight">Never miss your morning routine! Set a reminder to stay on track</p>
+<button class="text-surface rounded-full px-6 py-2 text-label-md font-label-md hover:scale-95 transition-transform active:scale-90 bg-primary-container">Set Now</button>
+</div>
+<div class="absolute right-[-10px] bottom-[-10px] w-36 h-36">
+<img alt="Reminder Icon" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4xtf1zbMZwOzDFje9GRvyeZCMeAdQb1Nqui2OOa81iV4k8Jfr3LE8K4aDZkftxOY2R0lfJRFpzSbY37kxAip0Xx3qyAlNL5R9b6gG3XJpUCviNxXAXdltcbKWSs4NQJHFpc5MV8KcphnUla8BcdQEA_jTmqzU4iLNwuG51guA6bpbQXbACpkxVH7KeQjHq3hs97oFSZyY5iPbFcAvOsJU3_ZQEcIAx6xtzZJDSzg9wIgQlGzzPX5O6z2Xv-pJrD_9zLSjTScTbDQ"/>
+</div>
+</div>
+</section>
+<!-- Daily Routine Section -->
+<section class="space-y-4">
+<div class="flex justify-between items-center">
+<h3 class="text-headline-md font-headline-md text-on-surface">Daily routine</h3>
+<button class="text-label-md font-label-md text-primary-container">See all</button>
+</div>
+<div class="space-y-3 relative">
+<!-- Vertical Progress Line -->
+<div class="absolute left-4 top-8 bottom-8 w-[1px] border-l-2 border-dotted border-outline-variant z-0"></div>
+<!-- Routine Item 1 (Completed) -->
+<div class="bg-surface-container-lowest rounded-xl p-4 flex items-center gap-4 shadow-[0_4px_20px_rgba(0,0,0,0.04)] relative z-10">
+<div class="bg-primary-container text-on-primary-container rounded-full p-1 flex items-center justify-center w-6 h-6 shrink-0 absolute -left-8 md:relative md:left-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="w-12 h-12 bg-surface-container-low rounded-xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[28px]">local_drink</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-label-md font-label-md text-on-surface truncate">Drink a glass of water</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Streak 3 days</p>
+</div>
+<div class="flex items-center gap-1 border-l border-outline-variant pl-4 min-w-[80px] justify-end">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">schedule</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">5 min</span>
+</div>
+</div>
+<!-- Routine Item 2 (Completed) -->
+<div class="bg-surface-container-lowest rounded-xl p-4 flex items-center gap-4 shadow-[0_4px_20px_rgba(0,0,0,0.04)] relative z-10">
+<div class="bg-primary-container text-on-primary-container rounded-full p-1 flex items-center justify-center w-6 h-6 shrink-0 absolute -left-8 md:relative md:left-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="w-12 h-12 bg-secondary-fixed rounded-xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[28px]">self_improvement</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-label-md font-label-md text-on-surface truncate">Meditate to relax</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Streak 6 days</p>
+</div>
+<div class="flex items-center gap-1 border-l border-outline-variant pl-4 min-w-[80px] justify-end">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">schedule</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">15 min</span>
+</div>
+</div>
+<!-- Routine Item 3 (Pending) -->
+<div class="bg-surface-container-lowest rounded-xl p-4 flex items-center gap-4 shadow-[0_4px_20px_rgba(0,0,0,0.04)] relative z-10">
+<div class="bg-surface-container-high border border-outline-variant rounded-full p-1 flex items-center justify-center w-6 h-6 shrink-0 absolute -left-8 md:relative md:left-0">
+</div>
+<div class="w-12 h-12 bg-secondary-container opacity-20 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[28px]">fitness_center</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-label-md font-label-md text-on-surface truncate">Stretch for 10 minutes</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Streak 5 days</p>
+</div>
+<div class="flex items-center gap-1 border-l border-outline-variant pl-4 min-w-[80px] justify-end">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">schedule</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">10 min</span>
+</div>
+</div>
+<!-- Routine Item 4 (Pending) -->
+<div class="bg-surface-container-lowest rounded-xl p-4 flex items-center gap-4 shadow-[0_4px_20px_rgba(0,0,0,0.04)] relative z-10">
+<div class="bg-surface-container-high border border-outline-variant rounded-full p-1 flex items-center justify-center w-6 h-6 shrink-0 absolute -left-8 md:relative md:left-0">
+</div>
+<div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[28px]">directions_walk</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-label-md font-label-md text-on-surface truncate">Go for a short walk</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Streak 3 days</p>
+</div>
+<div class="flex items-center gap-1 border-l border-outline-variant pl-4 min-w-[80px] justify-end">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">schedule</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">15 min</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FAB -->
+<button class="fixed right-6 bottom-24 w-14 h-14 text-surface-bright rounded-full shadow-lg flex items-center justify-center hover:scale-105 active:scale-90 transition-transform z-50 bg-primary-container">
+<span class="material-symbols-outlined text-[32px]">add</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-8 bg-surface-container-lowest shadow-[0_-4px_20px_rgba(0,0,0,0.04)] z-50 rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1 scale-90 duration-150 ease-out" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-label-sm font-label-sm">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary-container transition-all" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="text-label-sm font-label-sm">Subs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary-container transition-all" href="#">
+<span class="material-symbols-outlined">notifications_active</span>
+<span class="text-label-sm font-label-sm">Alerts</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary-container transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alerts - Subscription Manager</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"tertiary-fixed": "#8cf7ce", "on-error-container": "#93000a", "outline-variant": "#dec0b7", "on-secondary-fixed": "#001f25", "on-primary-fixed-variant": "#5516be", "on-surface": "#241916", "surface-container": "#fee9e3", surface: "#fff8f6", "error-container": "#ffdad6", "tertiary-container": "#37a783", "surface-container-high": "#f9e4de", "primary-fixed": "#e9ddff", "inverse-primary": "#d0bcff", "surface-dim": "#ead6d0", "surface-tint": "#6d3bd7", "secondary-container": "#6ee8fe", "on-tertiary": "#ffffff", tertiary: "#006c51", "on-tertiary-container": "#003526", "inverse-surface": "#3a2e2a", "surface-container-low": "#fff1ed", outline: "#8a726a", "secondary-fixed-dim": "#5ad7ed", "on-primary": "#ffffff", "on-tertiary-fixed": "#002116", "surface-bright": "#fff8f6", "on-tertiary-fixed-variant": "#00513c", "primary-container": "#a37eff", "secondary-fixed": "#a0efff", "surface-variant": "#f3ded8", "inverse-on-surface": "#ffede8", "on-primary-container": "#380089", "on-error": "#ffffff", primary: "#6d3bd7", "on-secondary-fixed-variant": "#004e59", "on-primary-fixed": "#23005c", "on-secondary": "#ffffff", "on-surface-variant": "#57423b", secondary: "#006876", "tertiary-fixed-dim": "#6fdab3", error: "#ba1a1a", "on-secondary-container": "#006775", "on-background": "#241916", "surface-container-highest": "#f3ded8", "primary-fixed-dim": "#d0bcff", "surface-container-lowest": "#ffffff", background: "#fff8f6"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {gutter: "24px", "margin-mobile": "16px", sm: "12px", xl: "80px", base: "8px", "margin-desktop": "64px", md: "24px", lg: "48px", xs: "4px", "container-margin": "24px", "stack-md": "24px", "stack-lg": "48px"}, fontFamily: {"headline-md": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], "display-lg": ["Inter"], "label-sm": ["Inter"], "headline-lg-mobile": ["Inter"], "body-md": ["Inter"], "label-md": ["Inter"], headline: ["Inter"], display: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"headline-md": ["24px", {lineHeight: "32px", fontWeight: "600"}], "headline-lg": ["32px", {lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700"}], "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}], "display-lg": ["48px", {lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700"}], "label-sm": ["12px", {lineHeight: "16px", fontWeight: "500"}], "headline-lg-mobile": ["28px", {lineHeight: "36px", fontWeight: "700"}], "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600"}]}}}};</script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-background sticky top-0 z-40">
+<div class="flex items-center justify-between px-container-margin py-stack-md w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container">
+<img alt="Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfwUSkQ32aR6x3b8O4Q4GARnGV7gQbFRUmWeKvE3-EQWl3EUrwp-C7-UPfDGDf8Jpn_dKJKVb2FmevM37Hbmvm5--tsfljZQYkRzzL4FrBcmJV7jsSoAVaJreuhA1iPjUBOrWYHLZYUIdihbdDeQi9Q2xEhOeA-a5pl2FcalP333cTyyR-UbGSjhUdfDwAZiC5reJxYSIcHdbgKbtL6nE5-byNp0yxszvLKP3KNkeHUyJcBIhADrByhlRmOtMQt5iC_mLfouEeQBQ"/>
+</div>
+<h1 class="text-headline-md font-bold text-on-surface">Alerts</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-container-margin mt-base">
+<!-- Filter Tabs -->
+<div class="flex p-1 rounded-xl mb-stack-lg w-fit bg-background">
+<button class="px-6 py-2 rounded-lg text-label-md bg-surface-container-highest text-on-surface shadow-sm transition-all">All</button>
+<button class="px-6 py-2 rounded-lg text-label-md text-on-surface-variant hover:bg-surface-container transition-all">Upcoming</button>
+<button class="px-6 py-2 rounded-lg text-label-md text-on-surface-variant hover:bg-surface-container transition-all">Updates</button>
+</div>
+<!-- Notification List -->
+<div class="flex flex-col gap-4">
+<!-- High Priority: Upcoming Payment -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex gap-4 items-start border-l-4 border-primary">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-label-md text-on-surface">Upcoming Payment</h3>
+<span class="text-label-sm text-on-surface-variant">2h ago</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-4">Netflix payment of <span class="font-bold text-on-surface">$15.99</span> is due in 3 days.</p>
+<div class="flex gap-2">
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg text-label-md hover:shadow-lg transition-all active:scale-95">View Details</button>
+<button class="text-primary px-4 py-2 rounded-lg text-label-md hover:bg-primary-fixed transition-all">Dismiss</button>
+</div>
+</div>
+</div>
+<!-- Urgent Style: Trial Expiring -->
+<div class="bg-error-container p-5 rounded-xl flex gap-4 items-start shadow-sm">
+<div class="w-12 h-12 rounded-full bg-on-error flex items-center justify-center flex-shrink-0 text-error">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-label-md text-on-error-container">Trial Expiring</h3>
+<span class="text-label-sm text-on-error-container opacity-70">5h ago</span>
+</div>
+<p class="text-body-md text-on-error-container mb-4">Your Adobe Creative Cloud trial ends in 48 hours. Cancel now to avoid charges.</p>
+<button class="bg-error text-on-error px-6 py-2 rounded-full text-label-md hover:shadow-lg transition-all active:scale-95">Manage Trial</button>
+</div>
+</div>
+<!-- Warning Style: Price Increase -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex gap-4 items-start border-l-4 border-secondary">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-label-md text-on-surface">Price Increase</h3>
+<span class="text-label-sm text-on-surface-variant">Yesterday</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-4">YouTube Premium price will increase from <span class="line-through opacity-60">$11.99</span> to <span class="font-bold text-on-surface">$13.99</span> next month.</p>
+<button class="border border-secondary text-secondary px-4 py-2 rounded-lg text-label-md hover:bg-secondary-fixed transition-all">Review Options</button>
+</div>
+</div>
+<!-- Informational Style: Success -->
+<div class="bg-tertiary-fixed p-5 rounded-xl flex gap-4 items-start shadow-sm">
+<div class="w-12 h-12 rounded-full bg-on-tertiary flex items-center justify-center flex-shrink-0 text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-label-md text-on-tertiary-fixed">Payment Success</h3>
+<span class="text-label-sm text-on-tertiary-fixed opacity-70">2 days ago</span>
+</div>
+<p class="text-body-md text-on-tertiary-fixed opacity-90">Spotify payment of <span class="font-bold">$12.99</span> was successful.</p>
+</div>
+</div>
+<!-- Weekly Summary -->
+<div class="mt-stack-lg p-6 rounded-3xl relative overflow-hidden bg-background">
+<div class="relative z-10">
+<h2 class="text-headline-md text-on-surface mb-2">Weekly Summary</h2>
+<p class="text-body-md text-on-surface-variant mb-6">You saved $4.50 this week by canceling unused trials. Great job, Budi!</p>
+<div class="flex gap-4">
+<div class="bg-surface-container-lowest p-4 rounded-2xl flex-1 shadow-sm">
+<p class="text-label-sm text-on-surface-variant uppercase tracking-wider">Spent</p>
+<p class="text-headline-md text-primary">$142.30</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-2xl flex-1 shadow-sm">
+<p class="text-label-sm text-on-surface-variant uppercase tracking-wider">Scheduled</p>
+<p class="text-headline-md text-secondary">$28.15</p>
+</div>
+</div>
+</div>
+<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-primary opacity-5 rounded-full blur-3xl"></div>
+<div class="absolute -left-10 -top-10 w-40 h-40 bg-secondary opacity-5 rounded-full blur-3xl"></div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-6 bg-surface-container-lowest border-t border-outline-variant z-50 rounded-t-xl">
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-all">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="text-label-sm mt-1">Dashboard</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-all">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="text-label-sm mt-1">Subs</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-2xl px-4 py-1 scale-90 transition-transform duration-150 ease-out">
+<span class="material-symbols-outlined" data-icon="notifications_active" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+<span class="text-label-sm mt-1">Alerts</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-all">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-label-sm mt-1">Profile</span>
+</button>
+</nav>
+</body></html>
